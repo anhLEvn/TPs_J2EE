@@ -15,7 +15,7 @@
         <div style = "width:300px; height: 500px; top: 50px; bottom: auto; 
              margin-left:auto; margin-right: auto; border:5px; background: antiquewhite" >
             <h1>Menu</h1>
-            Bonjour <br>
+            Bonjour <%= request.getSession().getAttribute("nom") %> <br>
             Vous êtes autorisé à jouer.
             <br>
             <br>

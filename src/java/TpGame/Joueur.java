@@ -17,9 +17,9 @@ public class Joueur {
    private String loginName;
    private String password;
 
-    public Joueur(String lastname, String firstname, int age, String loginName, String password) {
-        this.lastname = lastname;
+    public Joueur(String firstname, String lastname, int age, String loginName, String password) {
         this.firstname = firstname;
+        this.lastname = lastname;
         this.age = age;
         this.loginName = loginName;
         this.password = password;
