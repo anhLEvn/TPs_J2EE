@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 package TpGame;
 
@@ -9,6 +14,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileUploadException;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
+import org.apache.commons.io.output.*;
+
 
 /**
  *
@@ -30,7 +42,7 @@ public class SaveFileServlet extends HttpServlet {
             throws ServletException, IOException {
        doPost(request, response);
        response.setContentType("text/html;charset=UTF-8");
-      //  isMultipart = ServletFileUpload.isMutipartContent(request);
+        isMultipart = ServletFileUpload.isMultipartContent(request);  
         try (PrintWriter out = response.getWriter()) {
            
         }
@@ -47,3 +59,4 @@ public class SaveFileServlet extends HttpServlet {
     }// </editor-fold>
 
 }
+

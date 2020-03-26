@@ -4,18 +4,12 @@
         <servlet-name>Login</servlet-name>
         <servlet-class>TpGame.Login</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>SaveFileServlet</servlet-name>
-        <servlet-class>TpGame.SaveFileServlet</servlet-class>
-    </servlet>
+    
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>SaveFileServlet</servlet-name>
-        <url-pattern>/SaveFileServlet</url-pattern>
-    </servlet-mapping>
+    
     <session-config>
         <session-timeout>
             30
