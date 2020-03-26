@@ -51,7 +51,7 @@ public class Login extends HttpServlet {
         loginList.put("meyer", new Joueur("Meyer", "Luc",30, "meyer", "1111"));
         loginList.put("dupont", new Joueur("Dupont", "René",40, "dupont", "2222"));
         loginList.put("legrand", new Joueur("Legrand", "Lisa",16, "legrand", "3333"));
-        
+         request.getSession().setAttribute("uploaded", false);
         Joueur j = (Joueur)loginList.get(nom);
         if(j.getLoginName()!= null && j.getPassword()!= null) {  
            if(j.getPassword().equals(pw)){
